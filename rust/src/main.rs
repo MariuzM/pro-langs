@@ -1,14 +1,14 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
 
+use std::io;
+
 #[path = "./modules/strings.rs"]
 mod strings;
 use strings::string_example;
 
 #[path = "./utils/util.rs"]
 mod util;
-
-use std::io;
 
 fn main() {
     string_example(); // Example: Working with strings
