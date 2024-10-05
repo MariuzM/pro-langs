@@ -1,4 +1,4 @@
 pub fn load() -> String {
-    print!("Loading util module... ");
+    println!("Loading util module... ");
     String::from("Hello, Rust!")
 }

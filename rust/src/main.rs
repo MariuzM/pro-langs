@@ -3,6 +3,8 @@
 
 use std::io;
 
+mod cat;
+
 #[path = "./modules/strings.rs"]
 mod strings;
 use strings::string_example;
@@ -11,8 +13,8 @@ use strings::string_example;
 mod util;
 
 fn main() {
-    string_example(); // Example: Working with strings
-
+    cat::cat::meow();
+    string_example();
     util::load();
 
     // array_example(); // Example 1: Working with arrays and user input
