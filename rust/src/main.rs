@@ -1,16 +1,19 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
 use std::io;
 
 fn main() {
-    array_example(); // Example 1: Working with arrays and user input
-    parsing_example(); // Example 2: Parsing strings to numbers
+    // array_example(); // Example 1: Working with arrays and user input
+    // parsing_example(); // Example 2: Parsing strings to numbers
     struct_example(); // Example 3: Working with structs and functions
-    scope_example(); // Example 4: Understanding scope and blocks
+                      // scope_example(); // Example 4: Understanding scope and blocks
 
-    ownership_example(); // Example: Ownership and borrowing
-    mutable_borrowing_example(); // Example: Mutable borrowing
-                                 // match_example(); // Example: Enums and pattern matching
-    loop_example(); // New Example: Loops and control flow
-    option_example(); // New Example: Handling Options and error checking
+    // ownership_example(); // Example: Ownership and borrowing
+    // mutable_borrowing_example(); // Example: Mutable borrowing
+    //                              // match_example(); // Example: Enums and pattern matching
+    // loop_example(); // New Example: Loops and control flow
+    // option_example(); // New Example: Handling Options and error checking
 }
 
 // ------------------------------------------------------------------
