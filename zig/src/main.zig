@@ -4,17 +4,17 @@ const builtin = @import("builtin");
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
     const allocator = gpa.allocator();
-    var n: usize = 0;
+    var num: usize = 0;
     if (builtin.target.os.tag == .macos) {
-        n = 10;
+        num = 10;
     } else {
-        n = 12;
+        num = 12;
     }
-    const buffer = try allocator.alloc(u64, n);
+    const buffer = try allocator.alloc(u64, num);
     std.debug.print("{d}\n", .{buffer});
-    const slice = buffer[0..];
-    for (slice) |x| {
-        std.debug.print("{d}\n", .{x});
+    const slices = buffer[0..];
+    for (slices) |slice| {
+        std.debug.print("{d}\n", .{slice});
     }
 
     // ==================================================================
