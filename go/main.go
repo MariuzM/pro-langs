@@ -32,9 +32,9 @@ func handleAbout(w http.ResponseWriter, r *http.Request) {
 }
 
 func structExamples() {
-	fmt.Printf("===================================================================\n")
+	fmt.Printf("====================================================================\n")
 	fmt.Println("Struct Examples")
-	fmt.Printf("===================================================================\n")
+	fmt.Printf("====================================================================\n")
 
 	type Rectangle struct {
 		Width  float64
