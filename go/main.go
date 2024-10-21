@@ -55,6 +55,7 @@ func pointerExamples() {
 	fmt.Printf("Person: %+v\n", person)
 	personPtr.Age = 31
 	fmt.Printf("Updated Person: %+v\n", person)
+	fmt.Printf("=====================================================\n")
 
 	// Example 4: Pointer to a slice
 	slice := []int{1, 2, 3}
